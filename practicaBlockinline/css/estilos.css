@@ -1,0 +1,26 @@
+
+/**¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,. 
+    ><((((º>   CSS de Quique   <º))))><   
+¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.-~*/
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: royalblue;
+    border: 3px solid black;
+
+    /* Propiedad nativa */
+    display: block;
+
+/*
+Tener en cuenta que los inlines pueden estar al lado uno del otro
+los bloques no ocupan todo el espacio
+*/
+
+    /* Cambiar la propiedad nativa de Bloque a Inline */
+    /* display: inline-block; */
+}
+
+span{
+    background-color: beige;
+}
