@@ -8,7 +8,7 @@
 <!-- Esto es para cada HTML y cambia según la página web, ayuda a que nos encuentren -->
     <!-- HTML Meta Tags -->
     <!-- SEO -->
-    <title>SEAT</title>
+    <title>Block Inline</title>
     <meta name="description" content="Página Oficial SEAT España, configura tu coche y descubre las ofertas y servicios que tenemos para ti. ¡Infórmate!">
 
     <!-- Google / Search Engine Tags -->
@@ -31,21 +31,62 @@
 
     <!-- Enlace a biblioteca de iconos tipográficos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
     <!-- Enlaces externos -->
     <link rel="stylesheet" href="css/resets/resets.css">
     <link rel="stylesheet" href="css/resets/normalize.css">
+
     <!-- Nuestros estilos CSS -->
     <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- <style>
+    .menu-principal__item01{
+        color: yellow;
+        /*sobreescribe todos los colores*/
+    }
+    </style> -->
 
 </head>
 
 <body>
+    
+    <a id= "boton" href= "../index.html"> Volver </a>
+    <!-- id permite poner etiqueta para luego referenciarla en el script de esta forma: a#boton -->
+
     <!-- Crear dos cuadrado azul-->
-     <div> </div> 
-     <div> </div> 
+     <!-- Crear cuadrado rojo  -->
+    <div class="cajaroja"> 
+        <p class='cajaroja_txt'> ESTE CUADRADO ES <span class= "cajaroja__txt__bold"> ROJO </span> ...
+        </p>
+    </div> 
+    <div class="cajaazul"> </div> 
+    <!-- Class permite poner etiqueta para luego referenciarla en el script de esta forma: div.cajaazul -->
+    <!-- Podemos referenciarlas directamente con .cajaazul -->
 
     <!-- Inline que crea dos titulos -->
     <span>¡Hola!</span>
     <span>¡Adiós!</span>
+
+    <!-- Linea divisoria de toda la pagina -->
+    <hr>
+
+    <!-- Creamos un menu -->
+    <h1>Nuevo ejemplo para practicar el BEM (etiquetado)</h1>
+    
+    <!-- Creamos un menu -->
+    <header>
+        <!-- Dentro del <header> puedo poner un style= y darle propiedades -->
+        <nav class="menu-principal">
+            <a class="menu-principal__item01--off">inicio</a>
+            <span>  &#9474; </span>
+            <a href="#" class="menu-principal__item02">servicios</a>
+            <span> &#9474; </span>
+            <a href="#" class="menu-principal__item03">quienes somos</a>
+            <span> &#9474; </span>
+            <a href="#" class="menu-principal__item04">contactar</a>
+        </nav>
+    </header>
+
+
 </body>
 </html>
