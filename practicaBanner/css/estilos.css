@@ -1,0 +1,84 @@
+
+/**¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.- 
+                CSS de Quique    <º))))><   
+    ><((((º>                 
+¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.-~*/
+
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: Black;
+}
+
+/* ======================================================== */
+        /* MONTANAS.HTML */
+/* ======================================================== */
+
+/* Creo la imagen Div del Fondo */
+/* Empezamos sin meterle ninguna altura ni anchura a la imagen, despues si */
+.banner-fondo{
+    background-image: url('../img/desktop/Chrysanthemum.jpg');
+        /* width: 100%;
+        height: 600px;  */
+    background-repeat: no-repeat;
+    /* Rellena el espacio del bloque con le imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-fondo__texto{
+    padding: 250px 0px;
+    text-align: right;
+    width: 80%;
+}
+
+/* Cambiar la fuente del titulo en index.html */
+.banner-fondo__texto__titulo{
+    color: white;
+    font-size: 150px;
+    font-weight: bolder;
+    font-family: 'Arial Black'; 
+    /* Texto en mayúsculas */
+    text-transform: uppercase;
+    /* Resetear el margin que proviene de normalize.css */
+    margin: 0px 0px 20px 0px;
+}
+
+.banner-fondo__texto__btn{
+    color: rgb(36, 84, 24);
+    font-size: 20px;
+    border: 1px solid rgb(21, 121, 38);
+    /* Redondea el boton */
+    border-radius: 4px;
+    background-color: rgb(249, 234, 225);
+    padding: 5px 50px;
+    /* Elimina el enlace subrayado */
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* ======================================================== */
+        /* INDEX.HTML */
+/* ======================================================== */
+
+.articulo{
+    padding: 40px;
+}
+.bannerMarca{
+  width: 45%;
+    
+}
+.articulo__texto-der{
+    display: inline-block;
+    width: 50%;
+    margin-left: 40px;
+    /* float: right; */
+    vertical-align: top;
+    text-justify: auto;
+}
+.articulo__texto-abj{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    text-justify: auto;
+}
