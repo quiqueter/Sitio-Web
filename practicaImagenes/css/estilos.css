@@ -1,0 +1,53 @@
+
+/**¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.- 
+                CSS de Quique    <º))))><   
+    ><((((º>                 
+¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.-~*/
+
+/*
+    header{
+        text-align:center;
+    }
+
+/* DIV que no es SEO */
+.banner-fondo{
+    /* Hay que darle un tamaño a la caja donde va a ir nuestro background */
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/desktop/banner-whiteJelly.jpg');
+    
+    /* centrar la caja al centro: 
+    reducimos la imagen width: 800px, height: 500px;
+    --Si se trata de un bloque:
+    margin (creamos un margin): 0 auto
+    Para este 0 usamos los shotshands de margin */ 
+
+
+    /*Si ponemos el Background color siempre quedara como color de fondo!, el resto de fondos ira encima*/
+    /* background-color: black; */
+    /* que no se repita */
+    background-repeat: no-repeat;
+    /* Tienes que caver aqui Cover
+    Contain entra pero se ve pequeña*/ 
+    background-size: cover;
+    /* Controlamos la posicion de la imagen dentro del bloque */
+    background-position: center;
+}
+.titulo{
+    color: white;
+    size: 100px;
+}
+
+/* DIV que si es SEO */
+.banner-marca{
+    /* Solo escalar o width o heith porque el otro lo autoescala por defecto */
+    width: 100%;
+
+    /* Reducimos a width: 400px y centramos
+    -- Se trata de un INLINE y vamos a centrarla:
+    text-align: center; debemos meterla en el header (más arriba)
+    porque funciona como un texto al ser inline */
+}
+
+
+
