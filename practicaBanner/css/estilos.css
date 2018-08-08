@@ -1,8 +1,28 @@
 
-/**¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.- 
+/**¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.-
                 CSS de Quique    <º))))><   
     ><((((º>                 
 ¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.-~*/
+
+/* 
+-- Colocar la tipografia en el css 
+@font-face{
+    -- Familia 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    -- De que carpeta cojo la tipo 
+    src: local('Open Sans'),
+        url(../fonts/etc) format('woff');
+} 
+Podemos reducirlo de la siguiente manera
+@font-face{
+    font-family: 'Open Sans';
+    src: local('Open Sans'),
+        url(../fonts/etc) format('woff');
+} 
+Nota: No cargar la tipografia en el SO sino directamente meterlo en la carpeta del proyecto.
+*/
 
 html{
     font-size: 16px;
@@ -55,7 +75,7 @@ html{
     /* Elimina el enlace subrayado */
     text-decoration: none;
     text-transform: capitalize;
-}
+}       
 
 /* ======================================================== */
         /* INDEX.HTML */

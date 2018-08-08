@@ -4,57 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>INDICE</title>
 
     <!-- Enlace a biblioteca de iconos tipográficos -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Zona de estilos -->
     <style>
+    /* Cargar archivos TIPOGRAFÍA para esta index.html */
+        @font-face{
+            font-family: 'OpenSansRegular';
+            src: local('#'), format(woff);
+        }
+        @font-face{
+            font-family: 'OpenSansBold';
+            src: local('#'), format(woff);
+        }
+    /* Decirle el estilo de caracter general que tendra la pagina */
+        html{
+            font-size: 16px;
+            font-family: 'OpenSansRegular', sans-serif;
+            color: #bababa;
+            padding: 50px;
+        }
+        /* body{
+            padding: 150 px;
+        } */
         ol{
             list-style-type: none;
         }
         ol li{
             margin-bottom: 20px;
+            /* Carceleros del POPUP*/ 
+            position: relative;
         }
         a{
-            color: black;
+            color: #bababa;
             text-decoration: none;
         }
-    
-    
+    /* Informamos que h1 y h2 van a ser Bold PERO de la tipografía */
+        h1, h4{
+            font-family: 'OpenSansBold', sans-serif;
+            color: black;
+            margin-bottom: 0
+        }
+        h1{
+            margin-bottom: 0;
+        }
+        h4{
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+        
+    /*------ Roll-over: Cuando el ratón pasa por encima-------- */
+        span.ancla,     
+        ol li:hover span.icon 
+          {
+             color: rgb(3, 115, 175);
+             font-size: 20px;
+         }  
+         ol li:hover a{
+             color:black;
+             /* font-family: 'OpenSansBold'; */
+             font-weight: bold;
+         }
+    /*-------------------  POP-UP ----------------------*/
+        .popup{
+            /*Que desaparezca*/
+            display: none;
+            /* Lo metemos en posicion lo elevamos en una capa2*/
+            position: absolute;
+            top: 0;
+            left: 600px;
+
+            width: 100px;
+            height: 100px;
+            border: 10px solid #eeeeee;
+             /* box-shadow: (x y espesor ancho color) */
+            box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.5);
+            
+             /* El texto quedara en medio del popip
+             margin-bottom: -50px; 
+             pero al usar el position mejor usar sus instrucciones*/ 
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;  
+         }
+        
+         /* Que aparezca cuando pasas por encima */
+        ol li:hover .popup{
+            display: inline-block;
+
+        }
+        .popup01{
+            background-image: url('practicaBlockinline/p1.jpg');
+        }
+        .popup02{
+            background-image: url('practicaImagenes/p2.jpg');
+        }
+        .popup03{
+            background-image: url('practicaBanner/p3.jpg');
+        }
     </style>
 </head>
-    
+
 <body>
     <h1>
         Directori<i class="far fa-grin-tongue"></i> WEB:
-        <h2>
-            Quique <i class="fas fa-anchor"></i>
-        </h2>
     </h1>
+    <h4>
+        Quique <span class="ancla"><i class="fas fa-anchor"></i></span>         
+    </h4>
 
     <!-- Empezamos haciendo una lista ol lista numerada, ul lista sin numerar puntitos -->
     <ol>
-        
+
         <li>
+            <!-- Insertar iconos -->
+            <span class="icon"> &#9658; </span>
             <!-- Practica sobre crear bloques y objetos Inline -->
-            <a href= "practicaBlockinline/index.html"> 
+            <a href= "practicaBlockinline/index.html">
                 Práctica de cajas Block/Inline (HTML/CSS)
-            </a> 
+            </a>
+            <!-- Pop up de cada práctica // creo 2 clases-->
+            <div class="popup popup01"> </div>
         </li>
         <li>
+            <!-- Insertar iconos -->
+            <span class="icon"> &#9658; </span>
             <!-- Practica para poner imagenes inline o block -->
             <a href= "practicaImagenes/index.html">
-                Práctica de gestión de Imagenes (Block/div (en fondo) y Inline/img)        
+                Práctica de gestión de Imagenes (Block/div (en fondo) y Inline/img)
             </a>
+            <!-- Pop up de cada práctica // creo 2 clases-->    
+            <div class="popup popup02"> </div>    
         </li>
         <li>
+            <!-- Insertar iconos -->
+            <span class="icon"> &#9658; </span>
             <!-- practica para hacer banner  -->
             <a href= "practicaBanner/index.html">
-                Práctica Banner a partir de Mookap sencillo (banner + articulo)        
+                Práctica Banner a partir de Mookap sencillo (banner + articulo)
             </a>
+            <!-- Pop up de cada práctica // creo 2 clases-->
+            <div class="popup popup03"> </div>
+    
         </li>
     </ol>
 </body>
