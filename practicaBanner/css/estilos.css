@@ -37,7 +37,7 @@ html{
 /* Creo la imagen Div del Fondo */
 /* Empezamos sin meterle ninguna altura ni anchura a la imagen, despues si */
 .banner-fondo{
-    background-image: url('../img/desktop/Chrysanthemum.jpg');
+    background-image: url('../img/desktop/banner_mountains.jpg');
         /* width: 100%;
         height: 600px;  */
     background-repeat: no-repeat;
@@ -47,9 +47,10 @@ html{
 }
 
 .banner-fondo__texto{
-    padding: 250px 0px;
+    padding: 300px 0px;
     text-align: right;
-    width: 80%;
+    width: 70%;
+    margin-bottom: 30px;
 }
 
 /* Cambiar la fuente del titulo en index.html */
@@ -101,4 +102,56 @@ html{
     width: 100%;
     margin-top: 20px;
     text-justify: auto;
+}
+
+/* ======================================================= */ 
+        /* body, section articulos */
+/* ======================================================= */
+
+.articulos{
+    position: relative;
+}
+.articulos__fondo{
+    width: 100%;
+    height: 2000px;
+    filter: sepia(44%) brightness(99%) saturate(170%) contrast(89%);
+}
+
+.articulos__parrafo01{
+    display: inline-block;
+    height: 900px;
+    padding: 80px; 
+    width: 45%;
+
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    left: 5%;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.926)
+}
+
+.articulos__parrafo02{
+    display: inline-block;
+    height: 900px;
+    padding: 80px; 
+    width: 45%;
+
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 100px;
+    right: 5%;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.926)
+}
+
+.articulo02__foto, .articulo03__foto{
+    width: 100%;
+
+}
+
+.articulo02__parrafo02, .articulo02__parrafo03{
+    margin: 40px;
 }
