@@ -1,0 +1,108 @@
+
+/**¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,. 
+    ><((((º>   CSS de Quique   <º))))><   
+¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.-~*/
+
+a#boton{
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px; */
+
+    /* Short hand de pagging -abreviacion del padding de arriba*/
+
+    /* Izquierda Derecha Abajo Izquierda */
+    /* padding: 10px 20px 10px 20px;  */
+
+    /* Por todas partes 30px */
+    /* padding: 30px  */
+
+    /* Arriba/Abajo Izquierda/derecha */
+    padding:10px 20px; 
+    
+    display: inline-block;
+    /* Ahora funciona el Margin */
+    margin-bottom: 40 px;
+
+    background-color: rgb(226, 178, 20);
+    border-radius: 5px;
+    border: 1px solid rgb(112, 87, 5);
+}
+
+div.cajaroja{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(150, 44, 44);
+    border: 3px solid black;
+
+    margin-top: 20px;
+    /* Propiedad nativa */
+    display: block;
+}
+
+
+div.cajaazul{
+    width: 300px;
+    height: 300px;
+    background-color: royalblue;
+    border: 3px solid black;
+
+    margin-top: 20px;
+    /* Propiedad nativa */
+    display: block;
+
+/*
+Tener en cuenta que los inlines pueden estar al lado uno del otro
+los bloques no ocupan todo el espacio
+*/
+
+    /* Cambiar la propiedad nativa de Bloque a Inline */
+     /* display: inline-block;  */
+}
+
+/*
+Puedes referenciar si solo cambias el color asi:
+div.cajaroja, div.cajaazul{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(150, 44, 44);
+    border: 3px solid black;
+}
+div.cajaazul{
+    background-color: royalblue;
+*/
+
+span{
+    background-color: beige;
+}
+
+.menu-principal{
+    float: right;
+    border-bottom: 1px dashed black;
+    padding-bottom: 10px;
+}
+
+/* Cuanto mas especificas mejor*/
+.menu-principal__item01,.menu-principal__item02,.menu-principal__item03,.menu-principal__item04{
+    color: black;
+    /* eliminar subrayado de <a> */
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+/* Crear "RollOver en el menu con la Pseudoclase HOVER */
+.menu-principal__item01:hover,.menu-principal__item02:hover,.menu-principal__item03:hover,.menu-principal__item04:hover{
+    color:red;
+}
+
+/* Deshabilitar el color lila de cuando has vistado el enlace */
+.menu-principal__item01:visited,.menu-principal__item02:visited,.menu-principal__item03:visited,.menu-principal__item04:visited{
+    /* Le adjudicas el mismo color */
+    color:black;
+}
+
+/* Se pone en rojo cuando estemos dentro del enlace de la a, en que zona me encuentro del meno*/
+.menu-principal__item01--off, .menu-principal__item02--off, .menu-principal__item03--off, .menu-principal__item04--off{
+    color: red;
+    font-weight: bolder;
+}
