@@ -1,0 +1,120 @@
+
+/**¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.-*'¯¨'*•
+              Guia de estilos de Quique    <º))))><
+    ><((((º>
+¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.¸¸,.-~*'¯¨'*•~-.,.-~*'¯¨'*•~*/
+
+/* Clases creadas para sacar la informacion basica antes de empezar a maquetar
+===================================================
+               TIPOGRAFIAS GENERALES
+===================================================
+
+---------------- FONT FACE --------------------------
+        @font-face{
+            font-family: 'OpenSansRegular';
+            src: local('#'), format(woff);
+        }
+        @font-face{
+            font-family: 'OpenSansBold';
+            src: local('#'), format(woff);
+
+---------------- H's -------------------
+
+        SEO
+h1{
+    font-size: 2.5rem;
+}
+h2{ 
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+h5{
+    font-size: 0.6rem;
+}
+h6{
+    font-size: 0.4;
+}
+
+----------------- Parrafos --------------------
+
+p{
+    font-size: 1rem;
+}
+
+-- La pre coje el formato previo del texto p.ej si esta escrito en word
+pre{
+    font-size: 1.250rem;
+}
+
+
+.tituloPrincipal{
+    font-size: 9.125rem;
+}
+
+.botonTexto{
+    font-size: 2.188rem;
+}
+
+
+===================================================
+                  ZONA DE COLORES
+===================================================
+
+--------------------------- COLORES DE LA MARCA -----------------------------
+.turquesaTexto{
+    color: #71C8AC;
+}
+.turquesaFondo{
+    background-color: #71C8AC;
+}
+
+.azulgrisTexto{
+    color: #707070;
+}
+.azulgrisFondo{
+    background-color: #707070;
+}
+
+.grismedioTexto{
+    color: #9AC0C7;
+}
+.grismedioFondo{
+    background-color: #9AC0C7;
+}
+
+---------------------------------- GRISES ------------------------------------
+
+.grisoscuro{
+   background-color: #454545; 
+}
+.grismedio{
+    background-color: #a5a5a5;
+}
+.grislight{
+    background-color: #eee;
+}
+
+.grisoscuroTexto{
+    color: #454545; 
+ }
+ .grismedioTexto{
+     color: #a5a5a5;
+ }
+ .grislightTexto{
+     color: #eee;
+ }
+
+.blancoFondo{
+    background-color: #f7f7f7
+}
+.negro{
+    background-color: #0a0a0a
+}
+
+*/
